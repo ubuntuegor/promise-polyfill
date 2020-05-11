@@ -1,5 +1,5 @@
-import Promise from './index';
-import promiseFinally from './finally';
+var Promise = require('./index');
+var promiseFinally = require('./finally');
 
 /** @suppress {undefinedVars} */
 var globalNS = (function() {

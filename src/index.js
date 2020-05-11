@@ -1,4 +1,4 @@
-import promiseFinally from './finally';
+var promiseFinally = require('./finally');
 
 // Store setTimeout reference so promise-polyfill will be unaffected by
 // other code modifying setTimeout (like sinon.useFakeTimers())
@@ -249,4 +249,4 @@ Promise._unhandledRejectionFn = function _unhandledRejectionFn(err) {
   }
 };
 
-export default Promise;
+module.exports = Promise;
